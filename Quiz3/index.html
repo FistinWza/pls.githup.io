@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
+    <title>Accessibility Quiz</title>
+    <link rel="stylesheet" href="/Quiz1/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+        <nav class="topnav" id="myTopnav">
+            <a href="/index.html" class="active"></i>Home</a>
+            <a href="/HomeQuiz/index.html">Quiz</a>
+            <a href="/index.html">บทความ</a>
+            <a href="/About/index.html">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="navResponsive()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <form method="post" action="/index.html">
+            <section role="region" aria-labelledby="student-info">
+                <h2 id="student-info">Student Info</h2>
+                <div class="info">
+                    <label for="student-name">Name:</label>
+                    <input type="text" name="student-name" id="student-name" />
+                </div>
+                <div class="info">
+                    <label for="student-email">Email:</label>
+                    <input type="email" name="student-email" id="student-email" />
+                </div>
+                <div class="info">
+                    <label for="birth-date">Date of Birth:</label>
+                    <input type="date" name="birth-date" id="birth-date" />
+                </div>
+            </section>
+            
+            <section role="region" aria-labelledby="bangrachan-questions">
+                <h2 id="bangrachan-questions">ศึกบางระจัน</h2>
+                
+                <div class="question-block">
+                    <h3>1</h3>
+                    <fieldset class="question" name="bangrachan-question-one">
+                        <legend>ศึกบางระจันเกิดขึ้นในปีใด?</legend>
+                        <label><input type="radio" name="q1" value="2308"> พ.ศ. 2308</label>
+                        <label><input type="radio" name="q1" value="2310"> พ.ศ. 2310</label>
+                        <label><input type="radio" name="q1" value="2325"> พ.ศ. 2325</label>
+                    </fieldset>
+                </div>
+                
+                <div class="question-block">
+                    <h3> 2</h3>
+                    <fieldset class="question" name="bangrachan-question-two">
+                        <legend>ใครเป็นผู้นำของชาวบ้านบางระจัน?</legend>
+                        <label><input type="radio" name="q2" value="nainoi"> นายทองเหม็น</label>
+                        <label><input type="radio" name="q2" value="naiin"> นายอิน</label>
+                        <label><input type="radio" name="q2" value="naiwan"> นายพันเรือง</label>
+                    </fieldset>
+                </div>
+                
+                <div class="question-block">
+                    <h3>3</h3>
+                    <fieldset class="question" name="bangrachan-question-three">
+                        <legend>ชาวบ้านบางระจันสามารถต้านทานกองทัพพม่าได้นานกี่เดือน?</legend>
+                        <label><input type="radio" name="q3" value="3"> 3 เดือน</label>
+                        <label><input type="radio" name="q3" value="5"> 5 เดือน</label>
+                        <label><input type="radio" name="q3" value="8"> 8 เดือน</label>
+                    </fieldset>
+                </div>
+                
+                <div class="question-block">
+                    <h3>4</h3>
+                    <fieldset class="question" name="bangrachan-question-four">
+                        <legend>เหตุใดชาวบ้านบางระจันจึงพ่ายแพ้?</legend>
+                        <label><input type="radio" name="q4" value="weapon"> อาวุธและกำลังพลไม่เพียงพอ</label>
+                        <label><input type="radio" name="q4" value="disease"> โรคระบาด</label>
+                        <label><input type="radio" name="q4" value="betrayal"> ถูกทรยศจากคนภายใน</label>
+                    </fieldset>
+                </div>
+                
+                <div class="question-block">
+                    <h3>5</h3>
+                    <fieldset class="question" name="bangrachan-question-five">
+                        <legend>การเสียสละของชาวบ้านบางระจันมีผลต่อประวัติศาสตร์ไทยอย่างไร?</legend>
+                        <textarea name="q5" rows="4" cols="50" placeholder="กรุณาเขียนคำตอบของคุณที่นี่..."></textarea>
+                    </fieldset>
+                </div>
+            </section>
+            
+            <button type="submit">Send</button>
+        </form>
+    </main>
+  </body>
+</html>
+<script>
+    function navResponsive() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+
+}
+</script>

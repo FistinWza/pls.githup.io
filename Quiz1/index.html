@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
+    <title>Accessibility Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+        <nav class="topnav" id="myTopnav">
+            <a href="/index.html" class="active"></i>Home</a>
+            <a href="/HomeQuiz/index.html">Quiz</a>
+            <a href="/index.html">บทความ</a>
+            <a href="/About/index.html">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="navResponsive()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <form method="post" action="/index.html">
+          <section role="region" aria-labelledby="student-info">
+            <h2 id="student-info">Student Info</h2>
+            <div class="info">
+              <label for="student-name">Name:</label>
+              <input type="text" name="student-name" id="student-name" />
+            </div>
+            <div class="info">
+              <label for="student-email">Email:</label>
+              <input type="email" name="student-email" id="student-email" />
+            </div>
+            <div class="info">
+              <label for="birth-date">Date of Birth:</label>
+              <input type="date" name="birth-date" id="birth-date" />
+            </div>
+          </section>
+          <section role="region" aria-labelledby="html-questions">
+            <h2 id="html-questions">สงครามเก้าทัพ</h2>
+            <div class="question-block">
+              <h3><span class="sr-only">Question</span>1</h3>
+              <fieldset class="question" name="html-question-one">
+                <legend>สงครามเก้าทัพเกิดขึ้นในปีใด?</legend>
+                <ul class="answers-list">
+                  <li>
+                    <label for="q1-a1">
+                      <input type="radio" id="q1-a1" name="q1" value="2328" />
+                      พ.ศ. 2328
+                    </label>
+                  </li>
+                  <li>
+                    <label for="q1-a2">
+                      <input type="radio" id="q1-a2" name="q1" value="2310" />
+                      พ.ศ. 2310
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="question-block">
+              <h3><span class="sr-only">Question</span>2</h3>
+              <fieldset class="question" name="html-question-two">
+                <legend>ใครเป็นผู้นำฝ่ายไทยในสงครามนี้?</legend>
+                <ul class="answers-list">
+                  <li>
+                    <label for="q2-a1">
+                      <input type="radio" id="q2-a1" name="q2" value="rama1" />
+                      รัชกาลที่ 1
+                    </label>
+                  </li>
+                  <li>
+                    <label for="q2-a2">
+                      <input type="radio" id="q2-a2" name="q2" value="taksin" />
+                      สมเด็จพระเจ้าตากสินมหาราช
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+          </section>
+          <section role="region" aria-labelledby="css-questions">
+            <h2 id="css-questions">สงครามเก้าทัพเพิ่มเติม</h2>
+            <div class="formrow">
+              <div class="question-block">
+                <label for="selector">พม่ามีกี่ทัพในการบุกไทย?</label>
+              </div>
+              <div class="answer">
+                <select name="selector" id="selector" required>
+                  <option value="">Select an option</option>
+                  <option value="9">9 ทัพ</option>
+                  <option value="7">7 ทัพ</option>
+                </select>
+              </div>
+              <div class="question-block">
+                <label for="css-textarea">ความคิดเห็นเพิ่มเติมเกี่ยวกับสงครามเก้าทัพ:</label>
+              </div>
+              <div class="answer">
+                <textarea id="css-textarea" name="css-questions" rows="5" cols="24"></textarea>
+              </div>
+            </div>
+          </section>
+          <button type="submit">Send</button>
+        </form>
+      </main>
+  </body>
+</html>
+<script>
+    function navResponsive() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+
+}
+</script>

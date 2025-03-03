@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
+    <title>Accessibility Quiz</title>
+    <link rel="stylesheet" href="/Quiz1/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+        <nav class="topnav" id="myTopnav">
+            <a href="/index.html" class="active"></i>Home</a>
+            <a href="/HomeQuiz/index.html">Quiz</a>
+            <a href="/index.html">บทความ</a>
+            <a href="/About/index.html">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="navResponsive()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <form method="post" action="/index.html">
+            <section role="region" aria-labelledby="student-info">
+                <h2 id="student-info">Student Info</h2>
+                <div class="info">
+                    <label for="student-name">Name:</label>
+                    <input type="text" name="student-name" id="student-name" />
+                </div>
+                <div class="info">
+                    <label for="student-email">Email:</label>
+                    <input type="email" name="student-email" id="student-email" />
+                </div>
+                <div class="info">
+                    <label for="birth-date">Date of Birth:</label>
+                    <input type="date" name="birth-date" id="birth-date" />
+                </div>
+            </section>
+            
+            <section role="region" aria-labelledby="oct6-questions">
+                <h2 id="oct6-questions">6 ตุลาคม 2519</h2>
+                
+                <div class="question-block">
+                    <h3>1</h3>
+                    <fieldset class="question" name="oct6-question-one">
+                        <legend>เหตุการณ์ 6 ตุลาคม 2519 เกิดขึ้นที่ไหน?</legend>
+                        <label><input type="radio" name="q1" value="thammasat"> มหาวิทยาลัยธรรมศาสตร์</label>
+                        <label><input type="radio" name="q1" value="chula"> จุฬาลงกรณ์มหาวิทยาลัย</label>
+                        <label><input type="radio" name="q1" value="sanamluang"> สนามหลวง</label>
+                    </fieldset>
+                </div>
+                
+                <div class="question-block">
+                    <h3>2</h3>
+                    <fieldset class="question" name="oct6-question-two">
+                        <legend>เหตุการณ์นี้เกี่ยวข้องกับอะไร?</legend>
+                        <label><input type="radio" name="q2" value="protest"> การประท้วงของนักศึกษา</label>
+                        <label><input type="radio" name="q2" value="election"> การเลือกตั้งทั่วไป</label>
+                        <label><input type="radio" name="q2" value="royal"> พิธีสำคัญของสถาบันกษัตริย์</label>
+                    </fieldset>
+                </div>
+                
+                <div class="question-block">
+                    <h3>3</h3>
+                    <fieldset class="question" name="oct6-question-three">
+                        <legend>เหตุการณ์ 6 ตุลาคม 2519 นำไปสู่ผลกระทบใด?</legend>
+                        <label><input type="radio" name="q3" value="coup"> รัฐประหาร</label>
+                        <label><input type="radio" name="q3" value="peace"> ความสงบสุขในประเทศ</label>
+                        <label><input type="radio" name="q3" value="reform"> การปฏิรูปประชาธิปไตย</label>
+                    </fieldset>
+                </div>
+                
+                <div class="question-block">
+                    <h3>4</h3>
+                    <fieldset class="question" name="oct6-question-four">
+                        <legend>ใครเป็นกลุ่มเป้าหมายหลักของการปราบปรามในเหตุการณ์นี้?</legend>
+                        <label><input type="radio" name="q4" value="students"> นักศึกษาและประชาชน</label>
+                        <label><input type="radio" name="q4" value="military"> กองทัพ</label>
+                        <label><input type="radio" name="q4" value="business"> กลุ่มนักธุรกิจ</label>
+                    </fieldset>
+                </div>
+                
+                <div class="question-block">
+                    <h3>5</h3>
+                    <fieldset class="question" name="oct6-question-five">
+                        <legend>เหตุการณ์นี้ส่งผลกระทบต่อประชาธิปไตยไทยอย่างไร?</legend>
+                        <textarea name="q5" rows="4" cols="50" placeholder="กรุณาเขียนคำตอบของคุณที่นี่..."></textarea>
+                    </fieldset>
+                </div>
+            </section>
+            
+            
+            <button type="submit">Send</button>
+        </form>
+    </main>
+  </body>
+</html>
+<script>
+    function navResponsive() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+
+}
+</script>

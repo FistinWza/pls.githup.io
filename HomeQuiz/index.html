@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORKOUT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav class="topnav" id="myTopnav">
+            <a href="/index.html" class="active"></i>Home</a>
+            <a href="#home">Quiz</a>
+            <a href="/index.html">บทความ</a>
+            <a href="/About/index.html">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="navResponsive()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+   
+    <div class="card-container" id="home">
+        <a href="/Quiz1/index.html">
+            <div class="card">
+                <img src="/for-img/9arm2.webp" alt="Image 1">
+                <h3>สงครามเก้าทัพ</h3>
+                <p>การต่อสู้กันครั้งสุดท้าย</p>
+            </div>
+        </a> 
+        <a href="/Quiz4/index.html">
+            <div class="card">
+                <img src="/for-img/Dark2.webp" alt="Image 2">
+                <h3>ตุลาคมวิปโยค</h3>
+                <p>การสังหารหมู่</p>
+            </div>
+        </a> 
+        <a href="/Quiz3/index.html">
+            <div class="card">
+                <img src="/for-img/lose.webp" alt="Image 3">
+                <h3>ศึกบางระจัน</h3>
+                <p>บทเรียนอันทรงคุณค่าจากศึกบางระจัน</p>
+            </div>
+        </a> 
+        <a href="/Quiz2/index.html">
+            <div class="card">
+                <img src="/for-img/Fall.webp" alt="Image 4">
+                <h3>กรุงศรีอยุธยาถูกตีแตก</h3>
+                <p>จุดล่มสลายของอยุธยา</p>
+            </div>
+        </a> 
+        <a href="/Quiz5/index.html">
+            <div class="card">
+                <img src="/for-img/Hunt2.webp" alt="Image 5">
+                <h3>การล่าอาณานิคม</h3>
+                <p>ส่งผลให้ประชากรลดลงหลายล้านคน</p>
+            </div>
+        </a> 
+    </div>
+
+
+</body>
+</html>
+<script>
+      function navResponsive() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+
+  }
+</script>

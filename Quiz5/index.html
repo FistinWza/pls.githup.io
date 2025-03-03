@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Colonialism Quiz" />
+    <title>Colonialism Quiz</title>
+    <link rel="stylesheet" href="/Quiz1/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+        <nav class="topnav" id="myTopnav">
+            <a href="/index.html" class="active">Home</a>
+            <a href="/HomeQuiz/index.html">Quiz</a>
+            <a href="/index.html">บทความ</a>
+            <a href="/About/index.html">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="navResponsive()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <form method="post" action="/index.html">
+            <section role="region" aria-labelledby="colonialism-questions">
+                <h2 id="colonialism-questions">ยุคล่าอาณานิคม</h2>
+                
+                <div class="question-block">
+                    <h3>1</h3>
+                    <fieldset class="question" name="colonialism-question-one">
+                        <legend>ประเทศใดเป็นมหาอำนาจหลักในยุคล่าอาณานิคม?</legend>
+                        <label><input type="radio" name="q1" value="uk"> สหราชอาณาจักร</label>
+                        <label><input type="radio" name="q1" value="spain"> สเปน</label>
+                        <label><input type="radio" name="q1" value="both"> ทั้งสองประเทศ</label>
+                    </fieldset>
+                </div>
+                
+                <div class="question-block">
+                    <h3>2</h3>
+                    <fieldset class="question" name="colonialism-question-two">
+                        <legend>เหตุใดประเทศในยุโรปจึงล่าอาณานิคม?</legend>
+                        <label><input type="radio" name="q2" value="resources"> แสวงหาทรัพยากร</label>
+                        <label><input type="radio" name="q2" value="religion"> เผยแพร่ศาสนา</label>
+                        <label><input type="radio" name="q2" value="all"> ทุกข้อ</label>
+                    </fieldset>
+                </div>
+                
+                <div class="question-block">
+                    <h3>3</h3>
+                    <fieldset class="question" name="colonialism-question-three">
+                        <legend>ทวีปใดได้รับผลกระทบจากการล่าอาณานิคมมากที่สุด?</legend>
+                        <label><input type="radio" name="q3" value="africa"> แอฟริกา</label>
+                        <label><input type="radio" name="q3" value="asia"> เอเชีย</label>
+                        <label><input type="radio" name="q3" value="america"> อเมริกา</label>
+                    </fieldset>
+                </div>
+                
+                <div class="question-block">
+                    <h3>4</h3>
+                    <fieldset class="question" name="colonialism-question-four">
+                        <legend>ประเทศใดเป็นอาณานิคมของฝรั่งเศส?</legend>
+                        <label><input type="radio" name="q4" value="india"> อินเดีย</label>
+                        <label><input type="radio" name="q4" value="vietnam"> เวียดนาม</label>
+                        <label><input type="radio" name="q4" value="australia"> ออสเตรเลีย</label>
+                    </fieldset>
+                </div>
+                
+                <div class="question-block">
+                    <h3>5</h3>
+                    <fieldset class="question" name="colonialism-question-five">
+                        <legend>การล่าอาณานิคมส่งผลกระทบต่อประเทศที่ถูกยึดครองอย่างไร?</legend>
+                        <textarea name="q5" rows="4" cols="50" placeholder="กรุณาเขียนคำตอบของคุณที่นี่..."></textarea>
+                    </fieldset>
+                </div>
+            </section>
+            
+            <button type="submit">Send</button>
+        </form>
+    </main>
+  </body>
+</html>
+<script>
+    function navResponsive() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
